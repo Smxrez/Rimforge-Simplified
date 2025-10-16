@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimForge</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RimForge.CoilgunDef[defName="RF_Coilgun"]/costList</xpath>
+          <value>
+            <costList>
+      			<Steel>700</Steel>
+      			<Plasteel>200</Plasteel>
+      			<ComponentSpacer>6</ComponentSpacer>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_DroneLauncher"]/costList</xpath>
+          <value>
+            <costList>
+      			<Steel>250</Steel>
+      			<Plasteel>50</Plasteel>
+      			<ComponentSpacer>4</ComponentSpacer>
+      			<Chemfuel>400</Chemfuel>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_WirelessPowerPylon"]/costList</xpath>
+          <value>
+            <costList>
+      			<Steel>50</Steel>
+      			<ComponentSpacer>1</ComponentSpacer>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_GreenhouseController"]/costList</xpath>
+          <value>
+            <costList>
+      			<Steel>50</Steel>
+      			<Plasteel>100</Plasteel>
+      			<ComponentSpacer>6</ComponentSpacer>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="RF_TeslaCoilBase"]/costList</xpath>
+          <value>
+            <costList>
+      			<Steel>100</Steel>
+      			<ComponentIndustrial>5</ComponentIndustrial>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="RF_LightningRodBase"]/costList</xpath>
+          <value>
+            <costList>
+      			<Steel>150</Steel>
+      			<ComponentIndustrial>4</ComponentIndustrial>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="RF_CapacitorBase"]/costList</xpath>
+          <value>
+            <costList>
+              <Steel>75</Steel>
+      			  <ComponentIndustrial>6</ComponentIndustrial>
+				      <Plasteel>50</Plasteel>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_VirtuousTreaty"]/costList</xpath>
+          <value>
+            <costList>
+      			  <ComponentIndustrial>12</ComponentIndustrial>
+      			  <ComponentSpacer>2</ComponentSpacer>
+				      <Plasteel>50</Plasteel>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="RF_VirtuousTreaty"]/costStuffCount</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="RF_VirtuousTreaty"]/stuffCategories</xpath>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_SwordOfRapture"]/costList</xpath>
+          <value>
+            <costList>
+              <Steel>150</Steel>
+      			  <ComponentIndustrial>6</ComponentIndustrial>
+              <ComponentSpacer>6</ComponentSpacer>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_SwordOfRapture"]/recipeMaker/skillRequirements</xpath>
+          <value>
+            <skillRequirements>
+              <Crafting>10</Crafting>
+            </skillRequirements>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_StableRifle"]/costList</xpath>
+          <value>
+            <costList>
+              <Steel>150</Steel>
+      			  <ComponentIndustrial>7</ComponentIndustrial>
+				      <Plasteel>20</Plasteel>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_StablePistol"]/costList</xpath>
+          <value>
+            <costList>
+              <Steel>75</Steel>
+      			  <ComponentIndustrial>4</ComponentIndustrial>
+				      <Plasteel>10</Plasteel>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_GaeBulg"]/costList</xpath>
+          <value>
+            <costList>
+              <Steel>80</Steel>
+      			  <ComponentIndustrial>4</ComponentIndustrial>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="RF_Make_CoilgunShellAP"]/ingredients</xpath>
+          <value>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Steel</li>
+                  </thingDefs>
+                </filter>
+                <count>30</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Plasteel</li>
+                  </thingDefs>
+                </filter>
+                <count>15</count>
+              </li>
+            </ingredients>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="RF_Make_CoilgunShellAP"]/fixedIngredientFilter</xpath>
+          <value>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>Steel</li>
+                <li>Plasteel</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="RF_Make_CoilgunShellSP"]/ingredients</xpath>
+          <value>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Steel</li>
+                  </thingDefs>
+                </filter>
+                <count>30</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Uranium</li>
+                  </thingDefs>
+                </filter>
+                <count>15</count>
+              </li>
+            </ingredients>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="RF_Make_CoilgunShellSP"]/fixedIngredientFilter</xpath>
+          <value>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>Steel</li>
+                <li>Uranium</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="RF_Make_CoilgunShellHE"]/ingredients</xpath>
+          <value>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Steel</li>
+                  </thingDefs>
+                </filter>
+                <count>30</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Chemfuel</li>
+                  </thingDefs>
+                </filter>
+                <count>30</count>
+              </li>
+            </ingredients>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName="RF_Make_CoilgunShellHE"]/fixedIngredientFilter</xpath>
+          <value>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RF_Forge"]</xpath>
+            <value>
+              <designationCategory></designationCategory>
+            </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="RF_HeatingElementBase"]</xpath>
+            <value>
+              <designationCategory></designationCategory>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_RitualCore"]</xpath>
+            <value>
+              <designationCategory></designationCategory>
+            </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/TerrainDef[defName="RF_Floor_Bronze"]</xpath>
+            <value>
+              <designationCategory></designationCategory>
+            </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_MineableCopper"]/building/mineableScatterCommonality</xpath>
+          <value>
+          <mineableScatterCommonality>0</mineableScatterCommonality>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RF_MineableTin"]/building/mineableScatterCommonality</xpath>
+          <value>
+          <mineableScatterCommonality>0</mineableScatterCommonality>
+          </value>
+        </li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

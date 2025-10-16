@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations> 
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_StrikeDrone"]</xpath>
+                    <value>
+                        <techprintCount>1</techprintCount>
+                        <techprintCommonality>0.7</techprintCommonality>
+                        <techprintMarketValue>2500</techprintMarketValue>
+                        <heldByFactionCategoryTags>
+                            <li>Empire</li>
+                            <li>Outlander</li>
+                        </heldByFactionCategoryTags>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_Coilgun"]</xpath>
+                    <value>
+                        <techprintCount>1</techprintCount>
+                        <techprintCommonality>0.7</techprintCommonality>
+                        <techprintMarketValue>2500</techprintMarketValue>
+                        <heldByFactionCategoryTags>
+                            <li>Empire</li>
+                            <li>Outlander</li>
+                        </heldByFactionCategoryTags>
+                    </value>
+                </li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

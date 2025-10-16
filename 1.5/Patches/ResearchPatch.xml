@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimForge</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RF_Forge"]/researchPrerequisites</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@Name="RF_HeatingElementBase"]/researchPrerequisites</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RF_Plant_MercuryBloom"]/researchPrerequisites</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RF_SwordOfRapture"]/recipeMaker/researchPrerequisite</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RF_MercuryUltraweave"]/recipeMaker/researchPrerequisite</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="RF_SwordOfRapture"]/recipeMaker</xpath>
+                    <value>
+                        <researchPrerequisite>
+                            <li>AdvancedFabrication</li>
+                        </researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName = "RF_Research_Forge"]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName = "RF_Research_Mercury"]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_Ritual"]</xpath>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_Coilgun"]/baseCost</xpath>
+                    <value>
+                        <baseCost>5000</baseCost>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_Greenhouses"]/baseCost</xpath>
+                    <value>
+                        <baseCost>3000</baseCost>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_StrikeDrone"]/baseCost</xpath>
+                    <value>
+                        <baseCost>5000</baseCost>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_Coilgun"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>GunTurrets</li>
+                            <li>AdvancedFabrication</li>
+                        </prerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_StrikeDrone"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Mortars</li>
+                            <li>AdvancedFabrication</li>
+                        </prerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_Greenhouses"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>Hydroponics</li>
+                            <li>AdvancedFabrication</li>
+                        </prerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_Greenhouses"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Spacer</techLevel>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="RF_Research_StrikeDrone"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Spacer</techLevel>
+                    </value>
+                </li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

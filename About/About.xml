@@ -1,0 +1,19 @@
+<ModMetaData>
+	<packageId>Smxrez.Rimforgesimple</packageId>
+	<name>Rimforge: Simplified</name>
+	<author>Smxrez</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<modDependencies>
+	<li>
+		<packageId>co.uk.epicguru.rimforge</packageId>
+		<displayName>RimForge</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2505778174</steamWorkshopUrl>
+	</li>
+	</modDependencies>
+	<description>Removes all metals and keeps functional buildings to make rimforge more simple</description>
+	<loadAfter>
+		<li>co.uk.epicguru.rimforge</li>
+	</loadAfter>
+</ModMetaData>
